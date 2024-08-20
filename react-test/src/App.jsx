@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import user from './user.json'
 
 function SomeButton({name}) {
   const [showName, setShowName] = useState(false);
@@ -22,7 +21,7 @@ function SomeButton({name}) {
 }
 
 function App() {
-  return <SomeButton name="Dmytro"></SomeButton>
+  return <SomeButton name={user.name}></SomeButton>
 }
 
 export default App
